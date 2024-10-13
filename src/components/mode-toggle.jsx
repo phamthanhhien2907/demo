@@ -1,28 +1,40 @@
-import { Moon, Sun } from "lucide-react"
-import { Switch } from "@/components/ui/switch"
-import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { useTheme } from "@/components/theme-provider"
-import { useState } from "react"
+import { Switch } from "@/components/ui/switch";
+import { useTheme } from "@/components/theme-provider";
+import { useEffect, useState } from "react";
 
 export function ModeToggle() {
-  const { setTheme, theme } = useTheme()
+  const { setTheme, theme } = useTheme();
+  const [isDarkMode, setIsDarkMode] = useState(theme === "dark");
+
+  // Cập nhật trạng thái khi theme thay đổi
+  useEffect(() => {
+    setIsDarkMode(theme === "dark");
+  }, [theme]);
+
+  const toggleTheme = () => {
+    const newTheme = isDarkMode ? "light" : "dark";
+    console.log(newTheme)
+    setTheme(newTheme);
+    setIsDarkMode(!isDarkMode); // Cập nhật trạng thái sau khi thay đổi theme
+  };
+
   return (
-    
-   <div>
-    {theme === "light" ? <div className="flex items-center gap-4">
-        <span className="text-white">Chế độ sáng</span>
-        <div onClick={() => setTheme("dark")}> <Switch id="airplane-mode"  /></div>
-       </div>   : <div className="flex items-center gap-4">
-        <span>Chế độ tối</span>
-        <div onClick={() => setTheme("light")}>
-        <Switch id="airplane-mode"  /></div></div>}
-   </div>
-    
-  )
+    <>
+      {theme === "light" ? <div className="flex items-center gap-4">
+      <span className="text-gray-500">{isDarkMode ? "Chế độ tối" : "Chế độ sáng"}</span>
+      <Switch
+        id="airplane-mode"
+        checked={isDarkMode}
+        onClick={toggleTheme}
+      />
+    </div> : <div className="flex items-center gap-4">
+      <span className="text-white">{isDarkMode ? "Chế độ tối" : "Chế độ sáng"}</span>
+      <Switch
+        id="airplane-mode"
+        checked={isDarkMode}
+        onClick={toggleTheme}
+      />
+    </div>}
+    </>
+  );
 }

@@ -14,7 +14,6 @@ export default {
         9: "9 9 0%",
       },
       borderWidth: {
-        0.2: "0.2px",
         0: "0",
         2: "2px",
         3: "3px",

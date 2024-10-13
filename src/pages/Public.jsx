@@ -9,7 +9,7 @@ const Public = () => {
     window.scrollTo(0, 0)
   }, [path])
   return (
-    <div>
+    <div className='max-sm:hidden max-lg:hidden w-full'>
         <TopBar/>
         <div className='pt-[110px]'>
           <Outlet/>
