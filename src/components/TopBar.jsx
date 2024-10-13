@@ -29,14 +29,30 @@ const TopBar = () => {
                 <p className="text-gray-400 font-thin text-[10px]">Truyền phát miễn phí và HD</p>
               </div>
             </div>
-            {path.pathname === "/match" || path.pathname === "/calendar" &&  <div className="px-8 flex gap-8 ">
+            {path.pathname === "/match" &&  <div className="px-8 flex gap-8 ">
               <Link to="/">
               <div className="flex items-center gap-4 cursor-pointer">
                 <img src={home_logo} alt="home" className="w-[23px] h-[23px]" />
                 <span className="text-white text-base">Trang chủ</span>
               </div></Link>
              <Link to={`/calendar`}>
-             
+             <div className="flex items-center gap-4 cursor-pointer hover:translate-x-2 hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out">
+                <img src={lich_logo} alt="home" className="text-white w-[23px] h-[23px]" />
+                <span className="text-white text-base">Lịch thi đấu</span>
+              </div></Link>
+              <div className="flex items-center gap-4 cursor-pointer relative hover:translate-x-2 hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out">
+                <img src={download_logo} alt="home" className="text-white w-[23px] h-[23px] " />
+                <span className="text-white text-base ">Tải xuống</span>
+                <img src={hot} alt="home" className="text-white w-[23px] h-[23px] absolute -top-3 left-20" />
+              </div>
+            </div>}
+            {path.pathname === "/calendar" &&  <div className="px-8 flex gap-8 ">
+              <Link to="/">
+              <div className="flex items-center gap-4 cursor-pointer">
+                <img src={home_logo} alt="home" className="w-[23px] h-[23px]" />
+                <span className="text-white text-base">Trang chủ</span>
+              </div></Link>
+             <Link to={`/calendar`}>
              <div className="flex items-center gap-4 cursor-pointer hover:translate-x-2 hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out">
                 <img src={lich_logo} alt="home" className="text-white w-[23px] h-[23px]" />
                 <span className="text-white text-base">Lịch thi đấu</span>
@@ -62,7 +78,6 @@ const TopBar = () => {
                 <ModeToggle/>
             </div>
            </div>
-           
         </div>
     </div>
   )
