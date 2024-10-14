@@ -5,7 +5,7 @@ const BottomBar = () => {
 
   return (
     <>
-        {theme === "light" ? <div className='bg-white p-16 flex flex-col items-center justify-center  w-full'>
+        {theme === "light" ? <div className='bg-white h-[250px] flex flex-col items-center justify-center  w-full'>
         <div className='w-2/3 flex flex-col gap-8'>
         <span className='text-center text-xs'>JalaLive Tất cả các tín hiệu phát sóng trực tiếp được người dùng thu thập hoặc tổng hợp từ các công cụ tìm kiếm, tất cả nội dung đều đến từ internet, chúng tôi không cung cấp bất kỳ tín hiệu phát sóng trực tiếp hoặc nội dung video nào. Nếu quyền của bạn bị vi phạm, vui lòng cho chúng tôi biết, chúng tôi sẽ giải quyết vấn đề đó như càng sớm càng tốt.
         </span>
@@ -16,7 +16,7 @@ const BottomBar = () => {
         </span>
         <span className='text-center text-xs'>  Phiên bản: 6.1.4 （50）</span>
         </div>
-    </div> : <div className='bg-[#16181a] text-white p-16 flex flex-col items-center justify-center  w-full'>
+    </div> : <div className='bg-[#16181a] text-white flex flex-col items-center justify-center  w-full h-[250px]'>
         <div className='w-2/3 flex flex-col gap-8'>
         <span className='text-center text-xs'>JalaLive Tất cả các tín hiệu phát sóng trực tiếp được người dùng thu thập hoặc tổng hợp từ các công cụ tìm kiếm, tất cả nội dung đều đến từ internet, chúng tôi không cung cấp bất kỳ tín hiệu phát sóng trực tiếp hoặc nội dung video nào. Nếu quyền của bạn bị vi phạm, vui lòng cho chúng tôi biết, chúng tôi sẽ giải quyết vấn đề đó như càng sớm càng tốt.
         </span>

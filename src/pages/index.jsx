@@ -10,7 +10,7 @@ const Home = () => {
       <div className="fixed left-0">
         <LeftBar/>
       </div>
-      <div className="w-[100%] pl-[12.5%] flex flex-col gap-16">
+      <div className="w-[100%] pl-[12.5%] flex flex-col gap-8">
       <div className="flex gap-4">
         <VideoCustom/>
        <div className="flex flex-col gap-2 h-[620px] overflow-scroll scrollbar-hide">

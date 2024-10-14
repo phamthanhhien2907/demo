@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png"
-
+import logo_meovang from "@/assets/logo-meovang.webp"
 import bellowVideo from "../assets/bellow_img.png"
 import bellowVideo1 from "../assets/bellow_img1.png"
 
@@ -31,17 +31,17 @@ const TopBar = () => {
             <>
              {theme === "light" ?  <img src={bellowVideo1} alt="" className="absolute -z-10 " /> :  <img src={bellowVideo} alt="" className="absolute -z-10 bg-[rgba(16,17,20,.9)]" />}</>
           )}
-           <div className={path.pathname === "/match" || path.pathname === "/calendar" || path.pathname === "/download" ? `p-12 flex w-full items-center justify-between fixed top-0 overflow-hidden z-50 ${scrollScreen > 0 && `${theme === "light" ? "bg-gray-100" : "bg-gray-800"}  delay-100 duration-100 ease-in-out`} ` : `p-8 flex w-full items-center fixed top-0 overflow-hidden z-50 ${scrollScreen > 0 && `${theme === "light" ? "bg-gray-100" : "bg-gray-800"} delay-100 duration-100  ease-in-out`} `}>
+           <div className={path.pathname === "/match" || path.pathname === "/calendar" || path.pathname === "/download" ? `p-12 flex w-full items-center justify-between fixed top-0 overflow-hidden z-50 ${scrollScreen > 0 && `${theme === "light" ? "bg-gray-300" : "bg-gray-800"}  delay-100 duration-100 ease-in-out`} ` : `p-8 flex w-full items-center fixed top-0 overflow-hidden z-50 ${scrollScreen > 0 && `${theme === "light" ? "bg-gray-300" : "bg-gray-800"} delay-100 duration-100  ease-in-out`} `}>
             <div className={path.pathname === "/match" || path.pathname === "/calendar" || path.pathname === "/download" ? "flex items-center gap-4 flex-2" : "flex items-center gap-4 flex-1"} >
               <Link to="/">
-              <img src={logo} alt="logo" className="w-[40px] h-[40px] rounded-lg" /></Link>
-              {theme === "light" ? <div className="flex flex-col ">
+              <img src={logo_meovang} alt="logo" className=" h-[45px] rounded-lg" /></Link>
+              {/* {theme === "light" ? <div className="flex flex-col ">
                 <span className="text-black font-medium">JalaLive</span>
                 <p className="text-black font-thin text-[10px]">Truyền phát miễn phí và HD</p>
               </div> : <div className="flex flex-col ">
                 <span className="text-white font-medium">JalaLive</span>
                 <p className="text-gray-400 font-thin text-[10px]">Truyền phát miễn phí và HD</p>
-              </div>}
+              </div>} */}
             </div>
             {path.pathname === "/match" &&  <div className="px-8 flex gap-8 ">
               <>

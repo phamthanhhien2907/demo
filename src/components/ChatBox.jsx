@@ -9,7 +9,7 @@ const ChatBox = () => {
             <div className="bg-blue-500 text-white p-4 rounded-t-sm">
                 <h2 className="text-lg font-semibold text-center">Trò chuyện</h2>
             </div>
-            <div className="flex-1 p-4 overflow-y-auto bg-white">
+            <div className="flex-1 p-4 overflow-y-auto bg-gray-100">
                 <div className="mb-2">
                 <span className="font-semibold text-blue-400">Quản trị viên Dimas:</span>
                 <span className="ml-2 text-sm">Xin chào mọi người... chào mừng bạn đến với JALALIVE, phát trực tuyến miễn phí mà không phải trả tiền, chất lượng tốt nhất và không có quảng cáo!</span>
@@ -24,13 +24,13 @@ const ChatBox = () => {
                 </div>
                 {/* Thêm nhiều tin nhắn ở đây */}
             </div>
-            <div className="flex p-4 bg-white rounded-b-sm">
+            <div className="flex p-4 bg-gray-100 rounded-b-sm">
                 <input
                 type="text"
-                className="flex-1 p-2 border border-gray-200 rounded-l-sm focus:outline-none text-black border-r-0"
-                placeholder="Nhập ý kiến"
+                className="flex-1 p-2 border-2 border-gray-200 bg-gray-100  rounded-l-sm focus:outline-none text-black border-r-0"
+                placeholder="Đăng nhập để chat"
                 />
-                <button className="bg-white border border-gray-200 text-blue-500 p-2 border-l-0  rounded-r-sm  ">
+                <button className="bg-gray-100 border-2 border-gray-200 text-blue-500 p-2 border-l-0  rounded-r-sm  ">
                 Gửi
                 </button>
             </div>
@@ -59,7 +59,7 @@ const ChatBox = () => {
                 <input
                 type="text"
                 className="flex-1 p-2 border border-gray-400 rounded-l-sm focus:outline-none text-black"
-                placeholder="Nhập ý kiến"
+                placeholder="Đăng nhập để chat"
                 />
                 <button className="bg-blue-500 text-white p-2 rounded-r-sm hover:bg-blue-600">
                 Gửi
