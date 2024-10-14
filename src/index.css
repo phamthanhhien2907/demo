@@ -68,3 +68,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+.background-custom {
+  background-color: #dbd863 !important; /* Bỏ nền */
+  color : black !important;
+}
+.switch-custom-light {
+  background-color: gray !important; /* Bỏ nền */
+
+}
+.switch-custom-dark {
+  background-color: #eae315 !important; /* Bỏ nền */
+}
+.custom-thumb {
+  background-color : white !important;
+
+}

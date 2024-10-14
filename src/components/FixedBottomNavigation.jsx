@@ -10,6 +10,10 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import HomePage from "./Home.responsive";
 import CalendarReponsive from "./Calendar.responsive";
 import Profile from "./Profile.resposive";
+import MovieIcon from '@mui/icons-material/Movie';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import Highlight from "./Highlight.responsive";
+import News from "./News.repsonsive";
 export default function FixedBottomNavigation() {
   
   const messageExamples = [
@@ -17,8 +21,14 @@ export default function FixedBottomNavigation() {
       page: <CalendarReponsive  />,
     },
     {
+      page: <News  />,
+    },
+    {
       page: <HomePage  /> ,
     },   
+    {
+      page: <Highlight  />,
+    },
     {
       page: <Profile  />,
     },
@@ -40,7 +50,7 @@ export default function FixedBottomNavigation() {
       {activeComponent}
       <Paper
         sx={{
-          py: 2,
+          py: 1,
           position: "fixed",
           overflow : "hidden",
           bottom: 0,
@@ -60,36 +70,80 @@ export default function FixedBottomNavigation() {
           }}
         >
           <BottomNavigationAction
-            label={<span style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px' }}>Lịch thi đấu</span>}
+            label={<span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10px', color : "black" }}>Lịch trình</span>}
             sx={{
               fontWeight: 600,
               color: "rgb(151, 151, 153)",
-              ":focus": {
+             
+              ":focus" : {
+                borderRadius: "50%",
+                paddingTop : "10px",
+                paddingBottom : "10px",
+                bgcolor : "#f8c21b", 
                 color: "black",
-              },
+              } ,
+             
             }}
-            icon={<EmojiEventsIcon sx={{ fontSize: 30 }} />}
+            icon={<EmojiEventsIcon sx={{ fontSize: 25 }} />}
           />
-          <BottomNavigationAction
-            label={<span style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px' }}>Trang chủ</span>}
+           <BottomNavigationAction
+            label={<span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10px', color : "black" }}>Tin tức</span>}
             sx={{
               fontWeight: 600,
               color: "rgb(151, 151, 153)",
-              ":focus": {
+             ":focus" : {
+                borderRadius: "50%",
+                paddingTop : "10px",
+                paddingBottom : "10px",
+                bgcolor : "#f8c21b", 
                 color: "black",
-              },
+              } ,
             }}
-            icon={<LiveTvIcon sx={{ fontSize: 30 }} />}
+            icon={<CalendarMonthIcon sx={{ fontSize: 25 }} />}
           />
           <BottomNavigationAction
-            label={<span style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px' }}>Hồ sơ</span>}
+            label={<span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10px', color : "black" }}>Trang chủ</span>}
+            sx={{
+              fontWeight: 600,
+              color: "rgb(151, 151, 153)",
+              ":focus" : {
+                borderRadius: "50%",
+                paddingTop : "10px",
+                paddingBottom : "10px",
+                bgcolor : "#f8c21b", 
+                color: "black",
+              } ,
+            }}
+            icon={<LiveTvIcon sx={{ fontSize: 25 }} />}
+          />
+          <BottomNavigationAction
+            label={<span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10px', color : "black" }}>Highlight</span>}
+            sx={{
+              fontWeight: 600,
+              color: "rgb(151, 151, 153)",
+            ":focus" : {
+                borderRadius: "50%",
+                paddingTop : "10px",
+                paddingBottom : "10px",
+                bgcolor : "#f8c21b", 
+                color: "black",
+              } ,
+            }}
+            icon={<MovieIcon sx={{ fontSize: 25 }} />}
+          />
+          <BottomNavigationAction
+            label={<span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10px', color : "black" }}>Hồ sơ</span>}
             sx={{              
               color: "rgb(151, 151, 153)",
-              ":focus": {
+             ":focus" : {
+                borderRadius: "50%",
+                paddingTop : "10px",
+                paddingBottom : "10px",
+                bgcolor : "#f8c21b", 
                 color: "black",
-              },
+              } ,
             }}
-            icon={<PersonIcon sx={{ fontSize: 30 }} />}
+            icon={<PersonIcon sx={{ fontSize: 25 }} />}
           />
         </BottomNavigation>
       </Paper>

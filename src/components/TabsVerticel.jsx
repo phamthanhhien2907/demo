@@ -2,6 +2,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import "video-react/dist/video-react.css";
 import SlickSlider from "./SlickSlider";
 import Card from "./Card.responsive";
+import none2 from "../assets/none2.webp"
+
 const TabsVerticel = () => {
   return (
     <div className="w-full h-screen overflow-scroll overflow-x-hidden border-none">
@@ -30,6 +32,24 @@ const TabsVerticel = () => {
             <SlickSlider/>
             <Card/>
         </TabsContent>
+        <TabsContent value="footbal">
+        <div className="w-full flex items-center justify-center flex-col">
+          <img src={none2} alt="none2" />
+          <span className="text-gray-400 font-semibold">Anh em chờ trận nhé!</span>
+        </div>
+      </TabsContent>
+      <TabsContent value="basketball"> <div className="w-full flex items-center justify-center flex-col">
+          <img src={none2} alt="none2" />
+          <span className="text-gray-400 font-semibold">Anh em chờ trận nhé!</span>
+        </div></TabsContent>
+      <TabsContent value="game"> <div className="w-full flex items-center justify-center flex-col">
+          <img src={none2} alt="none2" />
+          <span className="text-gray-400 font-semibold">Anh em chờ trận nhé!</span>
+        </div></TabsContent>
+        <TabsContent value="voleyball"> <div className="w-full flex items-center justify-center flex-col">
+          <img src={none2} alt="none2" />
+          <span className="text-gray-400 font-semibold">Anh em chờ trận nhé!</span>
+        </div></TabsContent>
         </div>
         
         

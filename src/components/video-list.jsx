@@ -14,29 +14,48 @@ import {
 } from "@/components/ui/avatar"
 import path from "@/utils/path"
 import { useTheme } from "./theme-provider";
+import { useState } from "react";
 
 const VideoList = ({match}) => {
   const {theme} = useTheme()
-  const handleClick = (e) => {
-    console.log(e.target)
+  const [activeTab, setActiveTab] = useState('foryou');
+  const handleClick = (value) => {
+    setActiveTab(value)
+    
   }
   return (
     <div className="w-full  border-none ">
     <Tabs defaultValue="foryou" className="w-full h-full ">
       <div className="w-full flex flex-col px-2 outline-none ">
-        <TabsList className="w-1/4 flex justify-start" onClick={(e) => handleClick(e)}>
-          <TabsTrigger className={`text-sm text-gray-500 font-semibold px-6 `} value="foryou"  >
-              Tất cả
-          </TabsTrigger>
-          <TabsTrigger className="text-sm text-gray-500 font-semibold px-6 active:bg-blue-500" value="footbal" >
-           Đang live
-          </TabsTrigger>
-          <TabsTrigger className="text-sm text-gray-500 font-semibold px-6 active:bg-blue-500" value="basketball">
-            Hôm nay
-          </TabsTrigger>
-          <TabsTrigger className="text-sm text-gray-500 font-semibold px-6" value="game">
-            Ngày mai
-          </TabsTrigger>
+      <TabsList className="w-1/4 flex justify-start px-4">
+            <TabsTrigger 
+                className={`text-sm font-semibold px-6 ${activeTab === 'foryou' ? `text-white background-custom ` : 'text-gray-500'}`} 
+                value="foryou" 
+                onClick={() => handleClick("foryou")}
+            >
+                Tất cả
+            </TabsTrigger>
+            <TabsTrigger 
+                className={`text-sm font-semibold px-6 ${activeTab === 'footbal' ? 'background-custom  text-white' : 'text-gray-500'}`} 
+                value="footbal"
+                onClick={() => handleClick("footbal")}
+            >
+                Đang live
+            </TabsTrigger>
+            <TabsTrigger 
+                className={`text-sm font-semibold px-6 ${activeTab === 'basketball' ? 'background-custom  text-white' : 'text-gray-500'}`} 
+                value="basketball"  
+                onClick={() => handleClick("basketball")}
+            >
+                Hôm nay
+            </TabsTrigger>
+            <TabsTrigger 
+                className={`text-sm font-semibold px-6 ${activeTab === 'game' ? 'background-custom  text-white' : 'text-gray-500'}`} 
+                value="game" 
+                onClick={() => handleClick("game")}
+            >
+                Ngày mai
+            </TabsTrigger>
         </TabsList>
       </div>
       <div className="">

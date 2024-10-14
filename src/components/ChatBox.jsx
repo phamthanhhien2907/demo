@@ -1,10 +1,28 @@
+import { useEffect, useState } from "react";
 import { useTheme } from "./theme-provider";
+function useWindowHeight() {
+    const [height, setHeight] = useState(window.innerHeight);
 
-const ChatBox = () => {
+    useEffect(() => {
+        const handleResize = () => {
+            setHeight(window.innerHeight);
+        };
+
+        window.addEventListener('resize', handleResize); // Thêm sự kiện resize
+        return () => {
+            window.removeEventListener('resize', handleResize); // Cleanup
+        };
+    }, []);
+
+    return height;
+}
+const ChatBox = ({phone}) => {
   const {  theme } = useTheme();
+  const height = useWindowHeight();
+
   return (
     <>
-        {theme === "light" ? <div className="flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full">
+        {theme === "light" ? <div style={{ height: `${height / 2 + 150}px` }} className={`${phone ?`flex flex-col gap-2  overflow-scroll scrollbar-hide w-full` : "flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full"}`}>
         <div className="flex flex-col h-full mx-auto w-full border rounded-sm shadow-lg">
             <div className="bg-blue-500 text-white p-4 rounded-t-sm">
                 <h2 className="text-lg font-semibold text-center">Trò chuyện</h2>
@@ -35,7 +53,7 @@ const ChatBox = () => {
                 </button>
             </div>
         </div>
-     </div> : <div className="flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full">
+     </div> : <div style={{ height: `${height / 2 + 150}px` }}  className={`${phone ? `flex flex-col gap-2  overflow-scroll scrollbar-hide w-full` : "flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full"}`}>
         <div className="flex flex-col h-full mx-auto w-full border rounded-sm shadow-lg">
             <div className="bg-gray-800 text-white p-4 rounded-t-sm">
                 <h2 className="text-lg font-semibold text-center">Trò chuyện</h2>
@@ -53,6 +71,7 @@ const ChatBox = () => {
                 <span className="font-semibold text-blue-400">Rully:</span>
                 <span className="ml-2 text-sm">Chúng ta chọn màu gì đây anh bạn?</span>
                 </div>
+                
                 {/* Thêm nhiều tin nhắn ở đây */}
             </div>
             <div className="flex p-4 bg-[#16181a] rounded-b-sm">

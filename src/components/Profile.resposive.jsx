@@ -20,14 +20,16 @@ const Profile = () => {
   
   return (
    <div className="p-4 flex flex-col gap-6 pb-40">
-      <div className="flex items-center justify-between ">
+      <div className="flex items-center justify-between">
         <div className="flex flex-col items-start gap-2">
-          <Avatar sx={{ width : "80px", height : "80px" }}>A</Avatar>
+          <div className="flex items-center gap-2">
+          <Avatar sx={{ width : "45px", height : "45px" }}>A</Avatar>
           <span className="font-semibold text-lg">Anonymous</span>
+          </div>
           <span className="text-red-500 text-xs">Đăng nhập/Đăng kí để có thêm nhiều lợi ích</span>
         </div>
-        <div>
-          <button className="w-40 h-12 bg-[#ffdb00] rounded-full font-semibold">Điểm danh</button>
+        <div >
+          <button className="w-40 h-10 bg-[#ffdb00] rounded-full font-semibold">Điểm danh</button>
         </div>
       </div>
       <img src={banner_profile} alt="banner_profile " />

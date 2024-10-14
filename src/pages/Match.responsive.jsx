@@ -7,11 +7,26 @@ import {
 } from "@/components/ui/avatar"
 import { useEffect } from 'react';
 import { useTheme } from '../components/theme-provider';
+import ChatBox from '@/components/ChatBox';
+import { ArrowBack, ArrowBackIos } from '@mui/icons-material';
+import line from "@/assets/line.png"
+import tv from "@/assets/tv.png"
+import hd from "@/assets/hd.png"
 
 const MatchResponsive = ({match}) => {
   const {  theme } = useTheme();
  
   return (
+    <div className='flex items-center w-full flex-col'>
+    <div className='w-full h-10 bg-black flex items-center px-4 justify-between' onClick={()=> window.history.back()}> 
+      <ArrowBackIos />
+      <div className='flex items-center'>
+        <img className='w-[30px] h-[30px]' src={tv} alt="tv" />
+        <img className='w-[30px] h-[30px]' src={hd} alt="hd" />
+        <img className='w-[30px] h-[30px]' src={line} alt="line" />
+
+      </div>
+    </div>
     <div className={match ? 'w-full' : 'w-full'}>
         <Player
         width="100%"
@@ -29,6 +44,7 @@ const MatchResponsive = ({match}) => {
             <BigPlayButton position="center" />
             <LoadingSpinner />
     </Player>
+    <ChatBox phone/>
     {/* {match && <>
       {theme === "light" ? <div className='bg-gray-50 w-full flex items-center gap-4 p-4'>
       
@@ -54,6 +70,7 @@ const MatchResponsive = ({match}) => {
         </div>
         </div>
       </div>}</>} */}
+    </div>
     </div>
     
   )
