@@ -78,46 +78,10 @@ const ChatBox = ({phone}) => {
                 <span className="font-semibold text-blue-400">Rully:</span>
                 <span className="ml-2 text-sm text-black">Chúng ta chọn màu gì đây anh bạn?</span>
                 </div>
-                <div className="mb-2">
-                <span className="font-semibold text-blue-400">Quản trị viên Dimas:</span>
-                <span className="ml-2 text-sm text-black">Xin chào mọi người... chào mừng bạn đến với JALALIVE, phát trực tuyến miễn phí mà không phải trả tiền, chất lượng tốt nhất và không có quảng cáo!</span>
-                </div>
-                <div className="mb-2">
-                <span className="font-semibold text-blue-400">Dexx..R:</span>
-                <span className="ml-2 text-sm text-black">Năm tới, người ta nói rằng khuôn mặt của người dẫn chương trình sẽ xuất hiện, chị Mochi?</span>
-                </div>
-                <div className="mb-2">
-                <span className="font-semibold text-blue-400">Rully:</span>
-                <span className="ml-2 text-sm text-black">Chúng ta chọn màu gì đây anh bạn?</span>
-                </div>
-                <div className="mb-2">
-                <span className="font-semibold text-blue-400">Quản trị viên Dimas:</span>
-                <span className="ml-2 text-sm text-black">Xin chào mọi người... chào mừng bạn đến với JALALIVE, phát trực tuyến miễn phí mà không phải trả tiền, chất lượng tốt nhất và không có quảng cáo!</span>
+              
+               
                 
-                </div>
-                <div className="mb-2">
-                <span className="font-semibold text-blue-400">Dexx..R:</span>
-                <span className="ml-2 text-sm text-black">Năm tới, người ta nói rằng khuôn mặt của người dẫn chương trình sẽ xuất hiện, chị Mochi?</span>
-                </div>
-                <div className="mb-2">
-                <span className="font-semibold text-blue-400">Rully:</span>
-                <span className="ml-2 text-sm text-black">Chúng ta chọn màu gì đây anh bạn?</span>
-                </div>
-                <div className="mb-2">
-                <span className="font-semibold text-blue-400">Quản trị viên Dimas:</span>
-                <span className="ml-2 text-sm text-black">Xin chào mọi người... chào mừng bạn đến với JALALIVE, phát trực tuyến miễn phí mà không phải trả tiền, chất lượng tốt nhất và không có quảng cáo!</span>
-                </div>
-                <div className="mb-2">
-                <span className="font-semibold text-blue-400">Dexx..R:</span>
-                <span className="ml-2 text-sm text-black">Năm tới, người ta nói rằng khuôn mặt của người dẫn chương trình sẽ xuất hiện, chị Mochi?</span>
-                </div>
-                <div className="mb-2">
-                <span className="font-semibold text-blue-400">Rully:</span>
-                <span className="ml-2 text-sm text-black">Chúng ta chọn màu gì đây anh bạn?</span>
-                <div className="pb-24 pt-4 flex w-full items-center justify-center">
-                    <h3 className="text-sm text-center hidden">Đang cập nhập thêm tin tức mới</h3>
-                </div>
-                </div>
+               
                 {/* Thêm nhiều tin nhắn ở đây */}
             </div>
             {/* <div className="flex p-4 bg-white rounded-b-sm relative">
@@ -134,6 +98,7 @@ const ChatBox = ({phone}) => {
             <div className="fixed bottom-0 w-full">
             <div className="flex p-4 bg-white rounded-b-sm relative ">
                 <input
+                disabled
                 type="text"
                 className="flex-1 p-2 border border-gray-400 rounded-l-sm focus:outline-none text-black"
                 />
