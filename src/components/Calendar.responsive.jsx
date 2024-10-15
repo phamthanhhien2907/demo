@@ -39,7 +39,7 @@ const CalendarReponsive = () => {
           </TabsTrigger>
         </TabsList>
       </div>
-      <div className="pt-20">
+      <div className="pt-28">
       <TabsContent value="foryou">
        <div className="px-4 flex flex-col gap-4">
           <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
@@ -62,14 +62,14 @@ const CalendarReponsive = () => {
               </div>
               <div className="px-8">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2 ">
-                    <span>Na Thần FC</span>
+                  <div className="flex items-center gap-1 ">
+                    <span className="text-[13px] line-clamp-1">Na Thần FC</span>
                     <img className="w-[15px] h-[15px] rounded-full" src={nathan} alt="nathan" />
                   </div>
-                  <span style={{ fontFamily : "Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" }} className="text-2xl">1-1</span>
-                  <div className="flex items-center gap-2">
+                  <span style={{ fontFamily : "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" }} className="text-2xl">1-1</span>
+                  <div className="flex items-center gap-1">
                     <img className="w-[15px] h-[15px] rounded-full" src={trangsao} alt="trangsao" />
-                    <span>Trang chủSao</span>
+                    <span className="text-[13px] line-clamp-1">Trang chủSao</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
