@@ -2,7 +2,9 @@ import VideoCustom from "@/components/video-custom"
 import LeftBar from "../components/LeftBar"
 import demo from "../assets/demo.jpg"
 import demo4 from "../assets/demo4.jpg"
-
+import demo3 from "../assets/demo3.webp"
+import demo6 from "../assets/demo4.webp"
+import demo5 from "../assets/demo5.webp"
 import demo_list from "../assets/demo_list.jpg"
 
 import demo1 from "../assets/demo1.webp"
@@ -24,11 +26,11 @@ const Home = () => {
        <div className="flex flex-col gap-2 h-[620px] overflow-scroll scrollbar-hide">
       <Link to={path.MATCH}>
       <div className="w-[340px] h-[170px] cursor-pointer">
-          <img src={demo} alt="demo" className="w-full h-full" />
+          <img src={demo2} alt="demo" className="w-full h-full" />
         </div></Link>
         <Link to={path}>
       <div className="w-[340px] h-[170px] cursor-pointer">
-          <img src={demo2} alt="demo" className="w-full h-full" />
+          <img src={demo3} alt="demo" className="w-full h-full" />
         </div></Link>
         <Link to={path}>
       <div className="w-[340px] h-[170px] cursor-pointer">
@@ -36,11 +38,11 @@ const Home = () => {
         </div></Link>
         <Link to={path}>
       <div className="w-[340px] h-[170px] cursor-pointer">
-          <img src={demo_list} alt="demo" className="w-full h-full" />
+          <img src={demo5} alt="demo" className="w-full h-full" />
         </div></Link>
         <Link to={path}>
       <div className="w-[340px] h-[170px] cursor-pointer">
-          <img src={demo4} alt="demo" className="w-full h-full" />
+          <img src={demo6} alt="demo" className="w-full h-full" />
         </div></Link>
        </div>
       </div>
