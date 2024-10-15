@@ -29,7 +29,7 @@ const Profile = () => {
           <span className="text-red-500 text-xs">Đăng nhập/Đăng kí để có thêm nhiều lợi ích</span>
         </div>
         <div >
-          <button className="w-40 h-10 bg-[#ffdb00] rounded-full font-semibold">Điểm danh</button>
+          <button className="w-40 h-10 bg-[#ffdb00] rounded-lg font-semibold">Điểm danh</button>
         </div>
       </div>
       <img src={banner_profile} alt="banner_profile " />
