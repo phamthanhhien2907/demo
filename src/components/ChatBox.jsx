@@ -25,7 +25,7 @@ const ChatBox = ({phone}) => {
 
   return (
     <>
-       {isMobile ?  theme === "light" ? <div style={{ height: `${height / 2 - 100}px` }} className={`${phone ?`flex flex-col gap-2  overflow-scroll scrollbar-hide w-full ` : "flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full"}`}>
+       {isMobile ?  theme === "light" ? <div style={{ height: `${height / 2 - 50}px` }} className={`${phone ?`flex flex-col gap-2  overflow-scroll scrollbar-hide w-full ` : "flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full"}`}>
         <div className="flex flex-col h-full mx-auto w-full border rounded-sm shadow-lg border-none ">
             <div className="bg-blue-500 text-white px-4 rounded-t-sm">
             </div>
@@ -44,18 +44,24 @@ const ChatBox = ({phone}) => {
                 </div>
                 {/* Thêm nhiều tin nhắn ở đây */}
             </div>
-            <div className="flex p-4 bg-white rounded-b-sm">
+            <div className="fixed bottom-0 w-full">
+            <div className="flex p-4 bg-white rounded-b-sm relative ">
                 <input
-                    type="text"
-                    className="flex-1 p-2 border border-gray-400 rounded-l-sm focus:outline-none text-black"
-                    placeholder="Đăng nhập để chat nhé~~"
+                type="text"
+                className="flex-1 p-2 border border-gray-400 rounded-l-sm focus:outline-none text-black"
                 />
+                <div className="absolute left-6 top-7 flex items-center gap-1">
+                <span className="text-blue-700 text-sm font-semibold">Đăng nhập</span>
+                <span className="text-black text-sm"> để chat nhé~~</span>
+                </div>
                 <button className="bg-blue-500 text-white p-2 rounded-r-sm hover:bg-blue-600">
                     Gửi
                 </button>
             </div>
+            </div>
+           
         </div>
-     </div> : <div style={{ height: `${height / 2 - 100}px` }}  className={`${phone ? `flex flex-col gap-2 h-full  overflow-scroll scrollbar-hide w-full border-none` : "flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full"}`}>
+     </div> : <div style={{ height: `${height / 2 - 50}px` }}  className={`${phone ? `flex flex-col gap-2 h-full  overflow-scroll scrollbar-hide w-full border-none` : "flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full"}`}>
         <div className="flex flex-col h-full mx-auto w-full rounded-sm shadow-lg">
             <div className="flex-1 px-4 overflow-y-auto bg-white">
                 <div className="mb-2">
@@ -119,7 +125,8 @@ const ChatBox = ({phone}) => {
                     Gửi
                 </button>
             </div> */}
-            <div className="flex p-4 bg-white rounded-b-sm relative">
+            <div className="fixed bottom-0 w-full">
+            <div className="flex p-4 bg-white rounded-b-sm relative ">
                 <input
                 type="text"
                 className="flex-1 p-2 border border-gray-400 rounded-l-sm focus:outline-none text-black"
@@ -131,6 +138,7 @@ const ChatBox = ({phone}) => {
                 <button className="bg-blue-500 text-white p-2 rounded-r-sm hover:bg-blue-600">
                     Gửi
                 </button>
+            </div>
             </div>
         </div>
      </div> :  theme === "light" ? <div className={`${phone ?`flex flex-col gap-2  overflow-scroll scrollbar-hide w-full` : "flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full"}`}>
