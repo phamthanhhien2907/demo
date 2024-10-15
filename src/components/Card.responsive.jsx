@@ -314,7 +314,7 @@ const Card = ({match, phone}) => {
     </div> :  <div className={match ? "w-full" : "w-full px-4 "}>
         {/* <p className="text-xl font-semibold">Xu hướng</p> */}
         <img src={hot_live} alt="hot_live" className="w-[183px] h-[47px]" />
-       <div className={match ? "grid grid-cols-2 gap-4 py-4" : "grid grid-cols-2 gap-4 py-4"}>
+       <div className={match ? "grid grid-cols-2 gap-4 py-2" : "grid grid-cols-2 gap-1 py-4"}>
        {/* <Link to={`/${path.MATCH}`}>
        <div className="cursor-pointer flex flex-col items-center gap-4 relative">
                 <img src={demo} alt="demo" className="w-[278px] hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out"  />
@@ -339,17 +339,17 @@ const Card = ({match, phone}) => {
               
         </div></Link> */}
         <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
+           <div className=" bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
               <div className="flex items-center justify-between">
                 <div className="flex flex-col justify-center gap-1">
                   <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
+                  <div className="flex items-center gap-1 text-[8px] text-gray-500 font-semibold">
                     <span>14-10-2024</span>
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
-                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[8px] h-[8px]" />
                   <span className="text-white text-[8px]">Live</span>
                 </div>
 
@@ -385,17 +385,17 @@ const Card = ({match, phone}) => {
               </div>
         </div></Link>
         <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
+           <div className=" bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
               <div className="flex items-center justify-between">
                 <div className="flex flex-col justify-center gap-1">
                   <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
+                  <div className="flex items-center gap-1 text-[8px] text-gray-500 font-semibold">
                     <span>14-10-2024</span>
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
-                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[8px] h-[8px]" />
                   <span className="text-white text-[8px]">Live</span>
                 </div>
 
@@ -430,19 +430,19 @@ const Card = ({match, phone}) => {
               </div>
               </div>
         </div></Link>
-      
+    
         <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
+           <div className=" bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
               <div className="flex items-center justify-between">
                 <div className="flex flex-col justify-center gap-1">
                   <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
+                  <div className="flex items-center gap-1 text-[8px] text-gray-500 font-semibold">
                     <span>14-10-2024</span>
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
-                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[8px] h-[8px]" />
                   <span className="text-white text-[8px]">Live</span>
                 </div>
 
@@ -477,19 +477,19 @@ const Card = ({match, phone}) => {
               </div>
               </div>
         </div></Link>
-      
+    
         <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
+           <div className=" bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
               <div className="flex items-center justify-between">
                 <div className="flex flex-col justify-center gap-1">
                   <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
+                  <div className="flex items-center gap-1 text-[8px] text-gray-500 font-semibold">
                     <span>14-10-2024</span>
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
-                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[8px] h-[8px]" />
                   <span className="text-white text-[8px]">Live</span>
                 </div>
 
@@ -524,19 +524,19 @@ const Card = ({match, phone}) => {
               </div>
               </div>
         </div></Link>
-      
+    
         <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
+           <div className=" bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
               <div className="flex items-center justify-between">
                 <div className="flex flex-col justify-center gap-1">
                   <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
+                  <div className="flex items-center gap-1 text-[8px] text-gray-500 font-semibold">
                     <span>14-10-2024</span>
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
-                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[8px] h-[8px]" />
                   <span className="text-white text-[8px]">Live</span>
                 </div>
 
@@ -571,18 +571,19 @@ const Card = ({match, phone}) => {
               </div>
               </div>
         </div></Link>
+    
         <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
+           <div className=" bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
               <div className="flex items-center justify-between">
                 <div className="flex flex-col justify-center gap-1">
                   <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
+                  <div className="flex items-center gap-1 text-[8px] text-gray-500 font-semibold">
                     <span>14-10-2024</span>
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
-                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[8px] h-[8px]" />
                   <span className="text-white text-[8px]">Live</span>
                 </div>
 
@@ -617,6 +618,7 @@ const Card = ({match, phone}) => {
               </div>
               </div>
         </div></Link>
+    
       
       
         
