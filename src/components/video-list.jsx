@@ -6,6 +6,7 @@ import "video-react/dist/video-react.css";
 import nga from "../assets/nga.png"
 import japan from "../assets/japan.jpg"
 import none2 from "../assets/none2.webp"
+import living from "../assets/living.webp"
 
 import {
   Avatar,
@@ -73,7 +74,10 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between px-12">
@@ -116,7 +120,10 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between px-12">
@@ -159,7 +166,10 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between px-12">
@@ -202,7 +212,10 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between px-12">
@@ -245,7 +258,10 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between px-12">
@@ -279,6 +295,7 @@ const VideoList = ({match}) => {
               </div>
           </div></Link>
           
+          
           </> : <>
           <Link to={`/${path.MATCH}`}>
           <div className="w-[350px] hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-4 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-4">
@@ -290,7 +307,10 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between  px-12">
@@ -334,7 +354,10 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between  px-12">
@@ -378,7 +401,10 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between  px-12">
@@ -422,7 +448,10 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between  px-12">
@@ -466,7 +495,57 @@ const VideoList = ({match}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
+                
+              </div>
+              <div className="flex items-center justify-between  px-12">
+                  <div className="flex flex-col gap-2 items-center">
+                    <img src={japan} alt="nga" className="w-[60px] h-[60px] object-contain rounded-full" />
+                    <span className="text-xs font-semibold text-black">JPN League2</span>
+                  </div>
+                  <span className="text-3xl font-semibold text-black">
+                    1 : 1
+                  </span>
+                  <div className="flex flex-col gap-2 items-center">
+                    <img src={nga} alt="nga" className="w-[60px] h-[60px] object-contain rounded-full" />
+                    <span className="text-xs font-semibold text-black">Nga FNL2</span>
+                  </div>
+                  
+              </div>
+              <div>
+              <div className="flex justify-between">
+                 <div className="flex items-center gap-2">
+                 <Avatar className="h-6 w-6">
+                    <AvatarImage src={mochi} alt="mochi" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <span className="font-semibold text-xs text-black">Blv Mochi</span>
+                 </div>
+                  <div className="flex items-center gap-2 font-semibold">
+                <span className="text-xs text-gray-500">11.22K</span>
+                <span className="text-xs text-gray-500">Người xem</span>
+              </div>
+              </div>
+              </div>
+          </div>
+          </Link>
+          <Link to={`/${path.MATCH}`}>
+          <div className="w-[350px] hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-4 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-4">
+              <div className="flex items-center justify-between ">
+                <div className="flex flex-col justify-center gap-1">
+                  <span className="font-semibold text-black">Canadian Soccer League</span>
+                  <div className="flex items-center gap-1 text-xs text-gray-500 font-semibold">
+                    <span>14-10-2024</span>
+                    <span>04:00:00</span>
+                  </div>
+                </div>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-start gap-1 justify-center rounded-sm">
+                  <img src={living} alt="living" className="w-[12px] h-[12px]" />
+                  <span className="text-white text-[12px]">Live</span>
+                </div>
                 
               </div>
               <div className="flex items-center justify-between  px-12">
