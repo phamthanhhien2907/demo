@@ -73,6 +73,10 @@
   background-color: #dbd863 !important; /* Bỏ nền */
   color : black !important;
 }
+.background-info {
+  background-color: #ffc71c !important; /* Bỏ nền */
+  color : black !important;
+}
 .switch-custom-light {
   background-color: gray !important; /* Bỏ nền */
 

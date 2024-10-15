@@ -34,10 +34,13 @@ export default function FixedBottomNavigation() {
     },
   
   ];
+  if(!localStorage.getItem("page")) {
+    localStorage.setItem("page", 2)
+  }
   const page = localStorage.getItem("page");
   const [value, setValue] = useState(Number(page));
   const [activeComponent, setActiveComponent] = useState(
-    messageExamples[1].page
+    messageExamples[2].page
   );
   useEffect(() => {
     setActiveComponent(messageExamples[value].page);
@@ -62,7 +65,7 @@ export default function FixedBottomNavigation() {
       >
         <BottomNavigation
           showLabels
-          className="flex items-center w-full"
+          className="flex  w-full"
           value={value}
           onChange={(event, newValue) => {
             localStorage.setItem("page", newValue);
