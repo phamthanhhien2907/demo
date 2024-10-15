@@ -19,7 +19,7 @@ const MatchResponsive = ({match}) => {
   return (
     <div className='flex items-center w-full flex-col'>
     <div className='w-full h-10 bg-black flex items-center px-4 justify-between' onClick={()=> window.history.back()}> 
-      <ArrowBackIos />
+      <ArrowBackIos color='info' />
       <div className='flex items-center'>
         <img className='w-[30px] h-[30px]' src={tv} alt="tv" />
         <img className='w-[30px] h-[30px]' src={hd} alt="hd" />

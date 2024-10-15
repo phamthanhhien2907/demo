@@ -19,7 +19,7 @@ function useWindowHeight() {
 const ChatBox = ({phone}) => {
   const {  theme } = useTheme();
   const height = useWindowHeight();
-
+    console.log(theme)
   return (
     <>
         {theme === "light" ? <div style={{ height: `${height / 2 + 150}px` }} className={`${phone ?`flex flex-col gap-2  overflow-scroll scrollbar-hide w-full` : "flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full"}`}>
@@ -61,15 +61,15 @@ const ChatBox = ({phone}) => {
             <div className="flex-1 p-4 overflow-y-auto bg-[#16181a]">
                 <div className="mb-2">
                 <span className="font-semibold text-blue-400">Quản trị viên Dimas:</span>
-                <span className="ml-2 text-sm">Xin chào mọi người... chào mừng bạn đến với JALALIVE, phát trực tuyến miễn phí mà không phải trả tiền, chất lượng tốt nhất và không có quảng cáo!</span>
+                <span className="ml-2 text-sm text-white">Xin chào mọi người... chào mừng bạn đến với JALALIVE, phát trực tuyến miễn phí mà không phải trả tiền, chất lượng tốt nhất và không có quảng cáo!</span>
                 </div>
                 <div className="mb-2">
                 <span className="font-semibold text-blue-400">Dexx..R:</span>
-                <span className="ml-2 text-sm">Năm tới, người ta nói rằng khuôn mặt của người dẫn chương trình sẽ xuất hiện, chị Mochi?</span>
+                <span className="ml-2 text-sm text-white">Năm tới, người ta nói rằng khuôn mặt của người dẫn chương trình sẽ xuất hiện, chị Mochi?</span>
                 </div>
                 <div className="mb-2">
                 <span className="font-semibold text-blue-400">Rully:</span>
-                <span className="ml-2 text-sm">Chúng ta chọn màu gì đây anh bạn?</span>
+                <span className="ml-2 text-sm text-white">Chúng ta chọn màu gì đây anh bạn?</span>
                 </div>
                 
                 {/* Thêm nhiều tin nhắn ở đây */}
@@ -78,7 +78,7 @@ const ChatBox = ({phone}) => {
                 <input
                 type="text"
                 className="flex-1 p-2 border border-gray-400 rounded-l-sm focus:outline-none text-black"
-                placeholder="Đăng nhập để chat"
+                placeholder="Đăng nhập để chat nhé~~"
                 />
                 <button className="bg-blue-500 text-white p-2 rounded-r-sm hover:bg-blue-600">
                 Gửi
