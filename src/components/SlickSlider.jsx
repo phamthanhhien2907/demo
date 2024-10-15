@@ -20,7 +20,7 @@ const SlickSlider = () => {
       <Slider {...settings} className="w-full p-2 ">
         <div className="w-full">
           <img
-            src={demo1}
+            src={demo2}
             alt="banner"
             className="rounded-lg w-full"
           />
@@ -34,7 +34,7 @@ const SlickSlider = () => {
         </div>
         <div className="w-full">
           <img
-            src={demo3}
+            src={demo2}
             alt="banner"
             className="rounded-lg w-full"
           />
