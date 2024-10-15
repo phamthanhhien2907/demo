@@ -44,12 +44,12 @@ const CalendarReponsive = () => {
        <div className="px-4 flex flex-col gap-4">
           <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
               <div className="flex items-center justify-between py-2 border-b border-gray-300 px-4">
-                  <div className="flex items-center gap-2 flex-4">
+                  <div className="flex items-center gap-1 flex-4">
                   <img className="w-[15px] h-[15px]" src={football} alt="football" />
                   <span className="text-xs text-gray-500">
                     22:00
                   </span>
-                  <span className="text-xs text-gray-500 line-clamp-1 w-20">
+                  <span className="text-xs text-gray-500 line-clamp-1 w-10">
                     GHA Phân khu 1
                   </span>
                 </div>    
