@@ -38,13 +38,12 @@ const ChatBox = ({phone}) => {
                 <span className="font-semibold text-blue-400">Dexx..R:</span>
                 <span className="ml-2 text-sm">Năm tới, người ta nói rằng khuôn mặt của người dẫn chương trình sẽ xuất hiện, chị Mochi?</span>
                 </div>
-                <div className="mb-2">
+                <div className="mb-2 pb-24">
                 <span className="font-semibold text-blue-400">Rully:</span>
                 <span className="ml-2 text-sm">Chúng ta chọn màu gì đây anh bạn?</span>
+                    
                 </div>
-                <div className="pb-24 pt-4 flex w-full items-center justify-center">
-                    <h3 className="text-sm text-center hidden">Đang cập nhập thêm tin tức mới</h3>
-                </div>
+               
                 {/* Thêm nhiều tin nhắn ở đây */}
             </div>
             <div className="fixed bottom-0 w-full">
