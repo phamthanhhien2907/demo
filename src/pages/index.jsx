@@ -1,6 +1,14 @@
 import VideoCustom from "@/components/video-custom"
 import LeftBar from "../components/LeftBar"
 import demo from "../assets/demo.jpg"
+import demo4 from "../assets/demo4.jpg"
+
+import demo_list from "../assets/demo_list.jpg"
+
+import demo1 from "../assets/demo1.webp"
+import demo2 from "../assets/demo2.webp"
+
+
 import VideoList from "@/components/video-list"
 import { Link } from "react-router-dom"
 import path from "@/utils/path"
@@ -20,19 +28,19 @@ const Home = () => {
         </div></Link>
         <Link to={path}>
       <div className="w-[340px] h-[170px] cursor-pointer">
-          <img src={demo} alt="demo" className="w-full h-full" />
+          <img src={demo2} alt="demo" className="w-full h-full" />
         </div></Link>
         <Link to={path}>
       <div className="w-[340px] h-[170px] cursor-pointer">
-          <img src={demo} alt="demo" className="w-full h-full" />
+          <img src={demo1} alt="demo" className="w-full h-full" />
         </div></Link>
         <Link to={path}>
       <div className="w-[340px] h-[170px] cursor-pointer">
-          <img src={demo} alt="demo" className="w-full h-full" />
+          <img src={demo_list} alt="demo" className="w-full h-full" />
         </div></Link>
         <Link to={path}>
       <div className="w-[340px] h-[170px] cursor-pointer">
-          <img src={demo} alt="demo" className="w-full h-full" />
+          <img src={demo4} alt="demo" className="w-full h-full" />
         </div></Link>
        </div>
       </div>
