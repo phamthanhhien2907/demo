@@ -44,14 +44,14 @@ const ChatBox = ({phone}) => {
                 </div>
                 {/* Thêm nhiều tin nhắn ở đây */}
             </div>
-            <div className="flex p-4 bg-gray-100 rounded-b-sm">
+            <div className="flex p-4 bg-white rounded-b-sm">
                 <input
-                type="text"
-                className="flex-1 p-2 border-2 border-gray-200 bg-gray-100  rounded-l-sm focus:outline-none text-black border-r-0"
-                placeholder="Đăng nhập để chat"
+                    type="text"
+                    className="flex-1 p-2 border border-gray-400 rounded-l-sm focus:outline-none text-black"
+                    placeholder="Đăng nhập để chat nhé~~"
                 />
-                <button className="bg-gray-100 border-2 border-gray-200 text-blue-500 p-2 border-l-0  rounded-r-sm  ">
-                Gửi
+                <button className="bg-blue-500 text-white p-2 rounded-r-sm hover:bg-blue-600">
+                    Gửi
                 </button>
             </div>
         </div>
@@ -108,14 +108,28 @@ const ChatBox = ({phone}) => {
                 </div>
                 {/* Thêm nhiều tin nhắn ở đây */}
             </div>
-            <div className="flex p-4 bg-white rounded-b-sm">
+            {/* <div className="flex p-4 bg-white rounded-b-sm relative">
+                <input
+                    type="text"
+                    className="flex-1 p-2 border border-gray-400 rounded-l-sm focus:outline-none text-black"
+                    placeholder="Đăng nhập để chat nhé~~"
+                />
+               
+                <button className="bg-blue-500 text-white p-2 rounded-r-sm hover:bg-blue-600">
+                    Gửi
+                </button>
+            </div> */}
+            <div className="flex p-4 bg-white rounded-b-sm relative">
                 <input
                 type="text"
                 className="flex-1 p-2 border border-gray-400 rounded-l-sm focus:outline-none text-black"
-                placeholder="Đăng nhập để chat nhé~~"
                 />
+                <div className="absolute left-6 top-7 flex items-center gap-1">
+                <span className="text-blue-700 text-sm font-semibold">Đăng nhập</span>
+                <span className="text-black text-sm"> để chat nhé~~</span>
+                </div>
                 <button className="bg-blue-500 text-white p-2 rounded-r-sm hover:bg-blue-600">
-                Gửi
+                    Gửi
                 </button>
             </div>
         </div>

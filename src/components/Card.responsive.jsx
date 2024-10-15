@@ -3,6 +3,8 @@ import demo from "../assets/demo_list.jpg"
 import mochi from "../assets/mochi.jpg"
 import host from "../assets/host.gif"
 import hot_live from "../assets/hot-live.webp"
+import living from "../assets/living.webp"
+
 import "video-react/dist/video-react.css";
 import nga from "../assets/nga.png"
 import japan from "../assets/japan.jpg"
@@ -60,7 +62,7 @@ const Card = ({match, phone}) => {
                     <span className="text-black ">04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold text-xs ">Live</span>
+               <span className="text-red-500 font-semibold text-xs ">Live</span>
                 
               </div>
               <div className="flex items-center justify-between">
@@ -346,7 +348,11 @@ const Card = ({match, phone}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold text-xs">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
+                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                  <span className="text-white text-[8px]">Live</span>
+                </div>
+
                 
               </div>
               <div className="flex items-center justify-between">
@@ -388,7 +394,152 @@ const Card = ({match, phone}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold text-xs">Live</span>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
+                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                  <span className="text-white text-[8px]">Live</span>
+                </div>
+
+                
+              </div>
+              <div className="flex items-center justify-between">
+                  <div className="flex flex-col gap-2 items-center w-[70px]">
+                    <img src={japan} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
+                    <span className="text-[10px] font-semibold line-clamp-1 break-words w-full text-center">JPN League2</span>
+                  </div>
+                  <span className="text-sm font-semibold">
+                    1 : 1
+                  </span>
+                  <div className="flex flex-col gap-2 items-center w-14">
+                    <img src={nga} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
+                    <span className="text-[10px] font-semibold line-clamp-1 break-words text-center">Nga FNL2dasdsasadasass</span>
+                  </div>
+                  
+              </div>
+              <div>
+              <div className="flex justify-between">
+                 <div className="flex items-center gap-2">
+                 <Avatar className="h-5 w-5">
+                    <AvatarImage src={mochi} alt="mochi" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <span className="font-semibold text-[11px] ">Blv Mochi</span>
+                 </div>
+                  <div className="flex items-center gap-2 font-semibold">
+                <span className="text-[11px] text-gray-500">11.22K</span>
+              </div>
+              </div>
+              </div>
+        </div></Link>
+      
+        <Link to={`/${path.MATCH}`}>
+           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
+              <div className="flex items-center justify-between">
+                <div className="flex flex-col justify-center gap-1">
+                  <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
+                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
+                    <span>14-10-2024</span>
+                    <span>04:00:00</span>
+                  </div>
+                </div>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
+                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                  <span className="text-white text-[8px]">Live</span>
+                </div>
+
+                
+              </div>
+              <div className="flex items-center justify-between">
+                  <div className="flex flex-col gap-2 items-center w-[70px]">
+                    <img src={japan} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
+                    <span className="text-[10px] font-semibold line-clamp-1 break-words w-full text-center">JPN League2</span>
+                  </div>
+                  <span className="text-sm font-semibold">
+                    1 : 1
+                  </span>
+                  <div className="flex flex-col gap-2 items-center w-14">
+                    <img src={nga} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
+                    <span className="text-[10px] font-semibold line-clamp-1 break-words text-center">Nga FNL2dasdsasadasass</span>
+                  </div>
+                  
+              </div>
+              <div>
+              <div className="flex justify-between">
+                 <div className="flex items-center gap-2">
+                 <Avatar className="h-5 w-5">
+                    <AvatarImage src={mochi} alt="mochi" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <span className="font-semibold text-[11px] ">Blv Mochi</span>
+                 </div>
+                  <div className="flex items-center gap-2 font-semibold">
+                <span className="text-[11px] text-gray-500">11.22K</span>
+              </div>
+              </div>
+              </div>
+        </div></Link>
+      
+        <Link to={`/${path.MATCH}`}>
+           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
+              <div className="flex items-center justify-between">
+                <div className="flex flex-col justify-center gap-1">
+                  <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
+                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
+                    <span>14-10-2024</span>
+                    <span>04:00:00</span>
+                  </div>
+                </div>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
+                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                  <span className="text-white text-[8px]">Live</span>
+                </div>
+
+                
+              </div>
+              <div className="flex items-center justify-between">
+                  <div className="flex flex-col gap-2 items-center w-[70px]">
+                    <img src={japan} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
+                    <span className="text-[10px] font-semibold line-clamp-1 break-words w-full text-center">JPN League2</span>
+                  </div>
+                  <span className="text-sm font-semibold">
+                    1 : 1
+                  </span>
+                  <div className="flex flex-col gap-2 items-center w-14">
+                    <img src={nga} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
+                    <span className="text-[10px] font-semibold line-clamp-1 break-words text-center">Nga FNL2dasdsasadasass</span>
+                  </div>
+                  
+              </div>
+              <div>
+              <div className="flex justify-between">
+                 <div className="flex items-center gap-2">
+                 <Avatar className="h-5 w-5">
+                    <AvatarImage src={mochi} alt="mochi" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <span className="font-semibold text-[11px] ">Blv Mochi</span>
+                 </div>
+                  <div className="flex items-center gap-2 font-semibold">
+                <span className="text-[11px] text-gray-500">11.22K</span>
+              </div>
+              </div>
+              </div>
+        </div></Link>
+      
+        <Link to={`/${path.MATCH}`}>
+           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
+              <div className="flex items-center justify-between">
+                <div className="flex flex-col justify-center gap-1">
+                  <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
+                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
+                    <span>14-10-2024</span>
+                    <span>04:00:00</span>
+                  </div>
+                </div>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
+                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                  <span className="text-white text-[8px]">Live</span>
+                </div>
+
                 
               </div>
               <div className="flex items-center justify-between">
@@ -430,49 +581,11 @@ const Card = ({match, phone}) => {
                     <span>04:00:00</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-semibold text-xs">Live</span>
-                
-              </div>
-              <div className="flex items-center justify-between">
-                  <div className="flex flex-col gap-2 items-center w-[70px]">
-                    <img src={japan} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words w-full text-center">JPN League2</span>
-                  </div>
-                  <span className="text-sm font-semibold">
-                    1 : 1
-                  </span>
-                  <div className="flex flex-col gap-2 items-center w-14">
-                    <img src={nga} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words text-center">Nga FNL2dasdsasadasass</span>
-                  </div>
-                  
-              </div>
-              <div>
-              <div className="flex justify-between">
-                 <div className="flex items-center gap-2">
-                 <Avatar className="h-5 w-5">
-                    <AvatarImage src={mochi} alt="mochi" />
-                    <AvatarFallback>CN</AvatarFallback>
-                  </Avatar>
-                  <span className="font-semibold text-[11px] ">Blv Mochi</span>
-                 </div>
-                  <div className="flex items-center gap-2 font-semibold">
-                <span className="text-[11px] text-gray-500">11.22K</span>
-              </div>
-              </div>
-              </div>
-        </div></Link>
-        <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
-              <div className="flex items-center justify-between">
-                <div className="flex flex-col justify-center gap-1">
-                  <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
-                    <span>14-10-2024</span>
-                    <span>04:00:00</span>
-                  </div>
+                <div className="bg-[#fa3434] flex px-2 py-1 items-center gap-1 rounded-sm">
+                  <img src={living} alt="living" className="w-[9px] h-[9px]" />
+                  <span className="text-white text-[8px]">Live</span>
                 </div>
-                <span className="text-red-500 font-semibold text-xs">Live</span>
+
                 
               </div>
               <div className="flex items-center justify-between">
@@ -504,174 +617,8 @@ const Card = ({match, phone}) => {
               </div>
               </div>
         </div></Link>
-        <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
-              <div className="flex items-center justify-between">
-                <div className="flex flex-col justify-center gap-1">
-                  <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
-                    <span>14-10-2024</span>
-                    <span>04:00:00</span>
-                  </div>
-                </div>
-                <span className="text-red-500 font-semibold text-xs">Live</span>
-                
-              </div>
-              <div className="flex items-center justify-between">
-                  <div className="flex flex-col gap-2 items-center w-[70px]">
-                    <img src={japan} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words w-full text-center">JPN League2</span>
-                  </div>
-                  <span className="text-sm font-semibold">
-                    1 : 1
-                  </span>
-                  <div className="flex flex-col gap-2 items-center w-14">
-                    <img src={nga} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words text-center">Nga FNL2dasdsasadasass</span>
-                  </div>
-                  
-              </div>
-              <div>
-              <div className="flex justify-between">
-                 <div className="flex items-center gap-2">
-                 <Avatar className="h-5 w-5">
-                    <AvatarImage src={mochi} alt="mochi" />
-                    <AvatarFallback>CN</AvatarFallback>
-                  </Avatar>
-                  <span className="font-semibold text-[11px] ">Blv Mochi</span>
-                 </div>
-                  <div className="flex items-center gap-2 font-semibold">
-                <span className="text-[11px] text-gray-500">11.22K</span>
-              </div>
-              </div>
-              </div>
-        </div></Link>
-        <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
-              <div className="flex items-center justify-between">
-                <div className="flex flex-col justify-center gap-1">
-                  <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
-                    <span>14-10-2024</span>
-                    <span>04:00:00</span>
-                  </div>
-                </div>
-                <span className="text-red-500 font-semibold text-xs">Live</span>
-                
-              </div>
-              <div className="flex items-center justify-between">
-                  <div className="flex flex-col gap-2 items-center w-[70px]">
-                    <img src={japan} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words w-full text-center">JPN League2</span>
-                  </div>
-                  <span className="text-sm font-semibold">
-                    1 : 1
-                  </span>
-                  <div className="flex flex-col gap-2 items-center w-14">
-                    <img src={nga} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words text-center">Nga FNL2dasdsasadasass</span>
-                  </div>
-                  
-              </div>
-              <div>
-              <div className="flex justify-between">
-                 <div className="flex items-center gap-2">
-                 <Avatar className="h-5 w-5">
-                    <AvatarImage src={mochi} alt="mochi" />
-                    <AvatarFallback>CN</AvatarFallback>
-                  </Avatar>
-                  <span className="font-semibold text-[11px] ">Blv Mochi</span>
-                 </div>
-                  <div className="flex items-center gap-2 font-semibold">
-                <span className="text-[11px] text-gray-500">11.22K</span>
-              </div>
-              </div>
-              </div>
-        </div></Link>
-        <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
-              <div className="flex items-center justify-between">
-                <div className="flex flex-col justify-center gap-1">
-                  <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
-                    <span>14-10-2024</span>
-                    <span>04:00:00</span>
-                  </div>
-                </div>
-                <span className="text-red-500 font-semibold text-xs">Live</span>
-                
-              </div>
-              <div className="flex items-center justify-between">
-                  <div className="flex flex-col gap-2 items-center w-[70px]">
-                    <img src={japan} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words w-full text-center">JPN League2</span>
-                  </div>
-                  <span className="text-sm font-semibold">
-                    1 : 1
-                  </span>
-                  <div className="flex flex-col gap-2 items-center w-14">
-                    <img src={nga} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words text-center">Nga FNL2dasdsasadasass</span>
-                  </div>
-                  
-              </div>
-              <div>
-              <div className="flex justify-between">
-                 <div className="flex items-center gap-2">
-                 <Avatar className="h-5 w-5">
-                    <AvatarImage src={mochi} alt="mochi" />
-                    <AvatarFallback>CN</AvatarFallback>
-                  </Avatar>
-                  <span className="font-semibold text-[11px] ">Blv Mochi</span>
-                 </div>
-                  <div className="flex items-center gap-2 font-semibold">
-                <span className="text-[11px] text-gray-500">11.22K</span>
-              </div>
-              </div>
-              </div>
-        </div></Link>
-        <Link to={`/${path.MATCH}`}>
-           <div className=" hover:scale-110 hover:transition hover:delay-300 hover:duration-300 hover:ease-in-out bg-[#e8f0c6] p-2 cursor-pointer rounded-lg  border-yellow-500 border-2 flex flex-col gap-2">
-              <div className="flex items-center justify-between">
-                <div className="flex flex-col justify-center gap-1">
-                  <span className="font-semibold text-xs line-clamp-1">Canadian Soccer League</span>
-                  <div className="flex items-center gap-1 text-[10px] text-gray-500 font-semibold">
-                    <span>14-10-2024</span>
-                    <span>04:00:00</span>
-                  </div>
-                </div>
-                <span className="text-red-500 font-semibold text-xs">Live</span>
-                
-              </div>
-              <div className="flex items-center justify-between">
-                  <div className="flex flex-col gap-2 items-center w-[70px]">
-                    <img src={japan} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words w-full text-center">JPN League2</span>
-                  </div>
-                  <span className="text-sm font-semibold">
-                    1 : 1
-                  </span>
-                  <div className="flex flex-col gap-2 items-center w-14">
-                    <img src={nga} alt="nga" className="w-[35px] h-[35px] object-contain rounded-full" />
-                    <span className="text-[10px] font-semibold line-clamp-1 break-words text-center">Nga FNL2dasdsasadasass</span>
-                  </div>
-                  
-              </div>
-              <div>
-              <div className="flex justify-between">
-                 <div className="flex items-center gap-2">
-                 <Avatar className="h-5 w-5">
-                    <AvatarImage src={mochi} alt="mochi" />
-                    <AvatarFallback>CN</AvatarFallback>
-                  </Avatar>
-                  <span className="font-semibold text-[11px] ">Blv Mochi</span>
-                 </div>
-                  <div className="flex items-center gap-2 font-semibold">
-                <span className="text-[11px] text-gray-500">11.22K</span>
-              </div>
-              </div>
-              </div>
-        </div></Link>
+      
+      
         
        
         </div>

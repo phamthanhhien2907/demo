@@ -70,7 +70,9 @@
 }
 
 .background-custom {
-  background-color: #dbd863 !important; /* Bỏ nền */
+  /* background-color: #dbd863 !important;  */
+  background-color: #ffc71c !important; /* Bỏ nền */
+
   color : black !important;
 }
 .background-info {
