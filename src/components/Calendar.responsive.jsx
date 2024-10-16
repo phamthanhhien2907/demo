@@ -877,6 +877,327 @@ const CalendarReponsive = () => {
                 </div>
               </div>
           </div>
+          <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
+              <div className="flex items-center justify-between py-2 border-b border-gray-300 px-4">
+                  <div className="flex items-center gap-1 flex-4">
+                  <img className="w-[15px] h-[15px]" src={football} alt="football" />
+                  <span className="text-xs text-gray-500">
+                    22:00
+                  </span>
+                  <span className="text-xs text-gray-500 line-clamp-1 w-10">
+                    GHA Phân khu 1
+                  </span>
+                </div>    
+                  <div className="flex-4  flex items-end justify-center">
+                  <span className=" text-red-500 font-semibold text-sm">Trực tiếp 71'</span>
+                  </div>
+                  <div className="flex-4 flex items-end justify-end">
+                    <img className="w-[30px] h-[30px] brightness-0" src={star} alt="star" />
+                  </div>
+              </div>
+              <div className="px-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1 ">
+                    <span className="text-[13px] line-clamp-1">Mexico</span>
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo} alt="nathan" />
+                  </div>
+                  <span style={{ fontFamily : "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" }} className="text-2xl">1-1</span>
+                  <div className="flex items-center gap-1">
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo3} alt="trangsao" />
+                    <span className="text-[13px] line-clamp-1">USA</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
+                  <span>
+                    Hiệp 1: 1-1
+                  </span>
+                  <span>
+                    Hiệp 2: 2-2
+                  </span>
+                </div>
+              </div>
+          </div>
+          <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
+              <div className="flex items-center justify-between py-2 border-b border-gray-300 px-4">
+                  <div className="flex items-center gap-1 flex-4">
+                  <img className="w-[15px] h-[15px]" src={football} alt="football" />
+                  <span className="text-xs text-gray-500">
+                    22:00
+                  </span>
+                  <span className="text-xs text-gray-500 line-clamp-1 w-10">
+                    GHA Phân khu 1
+                  </span>
+                </div>    
+                  <div className="flex-4  flex items-end justify-center">
+                  <span className=" text-red-500 font-semibold text-sm">Trực tiếp 71'</span>
+                  </div>
+                  <div className="flex-4 flex items-end justify-end">
+                    <img className="w-[30px] h-[30px] brightness-0" src={star} alt="star" />
+                  </div>
+              </div>
+              <div className="px-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1 ">
+                    <span className="text-[13px] line-clamp-1">Mexico</span>
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo} alt="nathan" />
+                  </div>
+                  <span style={{ fontFamily : "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" }} className="text-2xl">1-1</span>
+                  <div className="flex items-center gap-1">
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo3} alt="trangsao" />
+                    <span className="text-[13px] line-clamp-1">USA</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
+                  <span>
+                    Hiệp 1: 1-1
+                  </span>
+                  <span>
+                    Hiệp 2: 2-2
+                  </span>
+                </div>
+              </div>
+          </div>
+          <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
+              <div className="flex items-center justify-between py-2 border-b border-gray-300 px-4">
+                  <div className="flex items-center gap-1 flex-4">
+                  <img className="w-[15px] h-[15px]" src={football} alt="football" />
+                  <span className="text-xs text-gray-500">
+                    22:00
+                  </span>
+                  <span className="text-xs text-gray-500 line-clamp-1 w-10">
+                    GHA Phân khu 1
+                  </span>
+                </div>    
+                  <div className="flex-4  flex items-end justify-center">
+                  <span className=" text-red-500 font-semibold text-sm">Trực tiếp 71'</span>
+                  </div>
+                  <div className="flex-4 flex items-end justify-end">
+                    <img className="w-[30px] h-[30px] brightness-0" src={star} alt="star" />
+                  </div>
+              </div>
+              <div className="px-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1 ">
+                    <span className="text-[13px] line-clamp-1">Mexico</span>
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo} alt="nathan" />
+                  </div>
+                  <span style={{ fontFamily : "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" }} className="text-2xl">1-1</span>
+                  <div className="flex items-center gap-1">
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo3} alt="trangsao" />
+                    <span className="text-[13px] line-clamp-1">USA</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
+                  <span>
+                    Hiệp 1: 1-1
+                  </span>
+                  <span>
+                    Hiệp 2: 2-2
+                  </span>
+                </div>
+              </div>
+          </div>
+          <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
+              <div className="flex items-center justify-between py-2 border-b border-gray-300 px-4">
+                  <div className="flex items-center gap-1 flex-4">
+                  <img className="w-[15px] h-[15px]" src={football} alt="football" />
+                  <span className="text-xs text-gray-500">
+                    22:00
+                  </span>
+                  <span className="text-xs text-gray-500 line-clamp-1 w-10">
+                    GHA Phân khu 1
+                  </span>
+                </div>    
+                  <div className="flex-4  flex items-end justify-center">
+                  <span className=" text-red-500 font-semibold text-sm">Trực tiếp 71'</span>
+                  </div>
+                  <div className="flex-4 flex items-end justify-end">
+                    <img className="w-[30px] h-[30px] brightness-0" src={star} alt="star" />
+                  </div>
+              </div>
+              <div className="px-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1 ">
+                    <span className="text-[13px] line-clamp-1">Mexico</span>
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo} alt="nathan" />
+                  </div>
+                  <span style={{ fontFamily : "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" }} className="text-2xl">1-1</span>
+                  <div className="flex items-center gap-1">
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo3} alt="trangsao" />
+                    <span className="text-[13px] line-clamp-1">USA</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
+                  <span>
+                    Hiệp 1: 1-1
+                  </span>
+                  <span>
+                    Hiệp 2: 2-2
+                  </span>
+                </div>
+              </div>
+          </div>
+          <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
+              <div className="flex items-center justify-between py-2 border-b border-gray-300 px-4">
+                  <div className="flex items-center gap-1 flex-4">
+                  <img className="w-[15px] h-[15px]" src={football} alt="football" />
+                  <span className="text-xs text-gray-500">
+                    22:00
+                  </span>
+                  <span className="text-xs text-gray-500 line-clamp-1 w-10">
+                    GHA Phân khu 1
+                  </span>
+                </div>    
+                  <div className="flex-4  flex items-end justify-center">
+                  <span className=" text-red-500 font-semibold text-sm">Trực tiếp 71'</span>
+                  </div>
+                  <div className="flex-4 flex items-end justify-end">
+                    <img className="w-[30px] h-[30px] brightness-0" src={star} alt="star" />
+                  </div>
+              </div>
+              <div className="px-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1 ">
+                    <span className="text-[13px] line-clamp-1">Mexico</span>
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo} alt="nathan" />
+                  </div>
+                  <span style={{ fontFamily : "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" }} className="text-2xl">1-1</span>
+                  <div className="flex items-center gap-1">
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo3} alt="trangsao" />
+                    <span className="text-[13px] line-clamp-1">USA</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
+                  <span>
+                    Hiệp 1: 1-1
+                  </span>
+                  <span>
+                    Hiệp 2: 2-2
+                  </span>
+                </div>
+              </div>
+          </div>
+          <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
+              <div className="flex items-center justify-between py-2 border-b border-gray-300 px-4">
+                  <div className="flex items-center gap-1 flex-4">
+                  <img className="w-[15px] h-[15px]" src={football} alt="football" />
+                  <span className="text-xs text-gray-500">
+                    22:00
+                  </span>
+                  <span className="text-xs text-gray-500 line-clamp-1 w-10">
+                    GHA Phân khu 1
+                  </span>
+                </div>    
+                  <div className="flex-4  flex items-end justify-center">
+                  <span className=" text-red-500 font-semibold text-sm">Trực tiếp 71'</span>
+                  </div>
+                  <div className="flex-4 flex items-end justify-end">
+                    <img className="w-[30px] h-[30px] brightness-0" src={star} alt="star" />
+                  </div>
+              </div>
+              <div className="px-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1 ">
+                    <span className="text-[13px] line-clamp-1">Mexico</span>
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo} alt="nathan" />
+                  </div>
+                  <span style={{ fontFamily : "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" }} className="text-2xl">1-1</span>
+                  <div className="flex items-center gap-1">
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo3} alt="trangsao" />
+                    <span className="text-[13px] line-clamp-1">USA</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
+                  <span>
+                    Hiệp 1: 1-1
+                  </span>
+                  <span>
+                    Hiệp 2: 2-2
+                  </span>
+                </div>
+              </div>
+          </div>
+          <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
+              <div className="flex items-center justify-between py-2 border-b border-gray-300 px-4">
+                  <div className="flex items-center gap-1 flex-4">
+                  <img className="w-[15px] h-[15px]" src={football} alt="football" />
+                  <span className="text-xs text-gray-500">
+                    22:00
+                  </span>
+                  <span className="text-xs text-gray-500 line-clamp-1 w-10">
+                    GHA Phân khu 1
+                  </span>
+                </div>    
+                  <div className="flex-4  flex items-end justify-center">
+                  <span className=" text-red-500 font-semibold text-sm">Trực tiếp 71'</span>
+                  </div>
+                  <div className="flex-4 flex items-end justify-end">
+                    <img className="w-[30px] h-[30px] brightness-0" src={star} alt="star" />
+                  </div>
+              </div>
+              <div className="px-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1 ">
+                    <span className="text-[13px] line-clamp-1">Mexico</span>
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo} alt="nathan" />
+                  </div>
+                  <span style={{ fontFamily : "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" }} className="text-2xl">1-1</span>
+                  <div className="flex items-center gap-1">
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo3} alt="trangsao" />
+                    <span className="text-[13px] line-clamp-1">USA</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
+                  <span>
+                    Hiệp 1: 1-1
+                  </span>
+                  <span>
+                    Hiệp 2: 2-2
+                  </span>
+                </div>
+              </div>
+          </div>
+          <div className="w-full rounded-lg bg-gray-100 flex flex-col py-4 gap-4">
+              <div className="flex items-center justify-between py-2 border-b border-gray-300 px-4">
+                  <div className="flex items-center gap-1 flex-4">
+                  <img className="w-[15px] h-[15px]" src={football} alt="football" />
+                  <span className="text-xs text-gray-500">
+                    22:00
+                  </span>
+                  <span className="text-xs text-gray-500 line-clamp-1 w-10">
+                    GHA Phân khu 1
+                  </span>
+                </div>    
+                  <div className="flex-4  flex items-end justify-center">
+                  <span className=" text-red-500 font-semibold text-sm">Trực tiếp 71'</span>
+                  </div>
+                  <div className="flex-4 flex items-end justify-end">
+                    <img className="w-[30px] h-[30px] brightness-0" src={star} alt="star" />
+                  </div>
+              </div>
+              <div className="px-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1 ">
+                    <span className="text-[13px] line-clamp-1">Mexico</span>
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo} alt="nathan" />
+                  </div>
+                  <span style={{ fontFamily : "Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" }} className="text-2xl">1-1</span>
+                  <div className="flex items-center gap-1">
+                    <img className="w-[15px] h-[15px] rounded-full" src={logo3} alt="trangsao" />
+                    <span className="text-[13px] line-clamp-1">USA</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
+                  <span>
+                    Hiệp 1: 1-1
+                  </span>
+                  <span>
+                    Hiệp 2: 2-2
+                  </span>
+                </div>
+              </div>
+          </div>
+          
         
           <div className="pb-24 pt-4 flex w-full items-center justify-center">
           <h3 className="text-sm text-center ">Đang cập nhập thêm lịch mới</h3>
