@@ -114,7 +114,7 @@ const ChatBox = ({phone}) => {
         </div>
      </div> :  theme === "light" ? <div className={`${phone ?`flex flex-col gap-2  overflow-scroll scrollbar-hide w-full` : "flex flex-col gap-2 h-[790px] overflow-scroll scrollbar-hide w-full"}`}>
         <div className="flex flex-col h-full mx-auto w-full border rounded-sm shadow-lg">
-            <div className="bg-blue-500 text-white p-4 rounded-t-sm">
+            <div className="bg-[#ffc71c] text-white p-4 rounded-t-sm">
                 <h2 className="text-lg font-semibold text-center">Trò chuyện</h2>
             </div>
             <div className="flex-1 p-4 overflow-y-auto bg-gray-100">
