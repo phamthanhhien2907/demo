@@ -68,7 +68,10 @@
     @apply bg-background text-foreground;
   }
 }
-
+.favicon {
+  width: 10px;
+  height: 10px;
+}
 .background-custom {
   /* background-color: #dbd863 !important;  */
   background-color: #ffc71c !important; /* Bỏ nền */

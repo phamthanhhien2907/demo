@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo-meovang.webp" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/logo-meovang.webp"
+      class="favicon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -14,6 +19,13 @@
     />
     <title>MeoVangTV</title>
   </head>
+  <style>
+    .favicon {
+      width: 5px;
+      height: 5px;
+      object-fit: cover;
+    }
+  </style>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
